@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b427f07407.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="outros/images/favicon.png">
+    <title>Brincando com tags</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Vamos brincar com o HTML aqui</h1>
+            <nav id="inicio">
+                <ul>
+                    <li> <a href="#texto">Tags para marcação de texto</a></li>
+                    <li> <a href="#texto">Tags para criação de listas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <section id="texto">
+            <header>
+                <h2>Tags para marcação de texto</h2>
+                <a href="#inicio">
+                    <i class="fa-solid fa-arrow-up"></i>Inicio
+                </a>
+            </header>
+            <p>
+                A linguagem <abbr title="Hyper Text Markup Language">HTML</abbr> é uma linguagem de marcação de hipertexto.
+                Basicamente isso significa que ela foi criada como uma linguagem para definção de formato do texto e a conexão entre diversas fontes
+                ou links.
+            </p>
+            <p>
+                As principais tags para se trabalhar com texto são: h1 - h6, p, a, em, strong, pre e br.
+                Além destas tags, também podemos contar com as tags sub, sup, cite, blockquote, além de uma míriade de 
+                outras tags que podem ser consultadas 
+                <a href="https://www.w3schools.com/tags/default.asp" target="_blank" rel="noopener noreferrer">aqui</a>.
+            </p>
+            <p>Clique no nome de cada tag para ver mais.</p>
+            <article>
+                <details>
+                    <summary>tag h1 até h6</summary>
+                    <h3>tag h1 até h6</h3>
+                    <p>As tags h1 - h6 são usadas para criar headings. É interessante respeitar a sequência dos headings, usando h1 para o conteúdo 
+                        principal, h2 para subtitulos, e assim por diante.
+                        Para formatar os headings devemos utilizar css e classes. Ou seja, utilzar:
+                    </p>
+                    <h1>h1</h1>
+                    <h2>h2</h2>
+                    <h3>h3</h3>
+                    <h4>h4</h4>
+                    <h5>h5</h5>
+                    <h6>h6</h6>
+                </details>
+                <details>
+                    <summary>tag p</summary>
+                    <h3>tag p</h3>
+                    <p>A tag <strong>p</strong> é utilizda para criação de parágrafos. Ela viabiliza a estruturação de textos de forma
+                        organizada, adicionando uma linha ao final de cada tag. Também adiciona espaços ao inicio e ao final de cada parágrafo.
+                    </p>
+                </details>
+                <details>
+                    <summary>tag pre</summary>
+                    <h3>tag pre</h3>
+                    <p>A tag <strong>pre</strong> é semelhante a tag <strong>p</strong>, sendo utilizda para criação de textos, porém a tag pre respeita os espaços digitados no código html.
+                    Exemplo:
+                    </p>
+                    <code>
+                        &lt;pre&gt;
+                        <pre>
+                            Este      texto
+                                        tem espaços digitados de forma irregural
+                                e a tag os mantém, conforme foram criados no HTML.
+                        </pre>
+                        &lt;pre&gt;
+                    </code>
+                    <p>Resulta em:</p>
+                    <pre>
+                        Este      texto
+                                    tem espaços digitados de forma irregural
+                            e a tag os mantém, conforme foram criados no HTML.
+                    </pre>
+                </details>
+                <details>
+                    <summary>tag <del>font</del> <ins><code> style="font-family=desired-font" </code></ins></summary>
+                    <h3>tag <del>font</del> <code>style="font-family=desired-font"</code></ins></h3>
+                    <p>A definição de fontes pode ser feita <del>pela tag font</del> <ins>por meio de folhas de estilo.</ins>
+                    As utilização de CSS está além do objetivo deste exercício.
+                    </p>
+                    <code>
+                        &lt;p&gt; Alterando um font-style &lt;span style="color: red; font-family:Arial"&gt;para Arail, color Red&lt;/span&gt;&lt;/p&gt;
+                    </code>
+                    <p> Alterando um font-style <span style="color: red; font-family:Arial">para Arail, color Red</span> </p>
+                </details>
+                <details>
+                    <summary>tags sub e sup</summary>
+                    <h3>tag sub e sup</h3>
+                    <p>A tag <strong>sub</strong> é utilizda para <sub>criação de texto subscrito.</sub> 
+                    Já a tab <strong>sup</strong> gera <sup>este efeito no texto</sup>. São particularmente úteis para notação científica e matemática.
+                    </p>
+                    <code>
+                        &lt;p&gt;X&lt;sup&gt;2&lt;/sup&gt; + 2X&lt;sup&gt;3&lt;/sup&gt; ou H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+                    </code>
+                    <p>Gera o seguinte resultado:</p>
+                    <p>X<sup>2</sup> + 2X<sup>3</sup> ou H<sub>2</sub>O</p>
+                </details>
+                <details>
+                    <summary>tags q e blockquote</summary>
+                    <h3>tag blockquote</h3>
+                    <p>A tag <strong>blockquote</strong> é utilizada para marcar citações longas e a tag <strong>q</strong> para marcar citações curtas.
+                        Exemplo:
+                    </p>
+                    <code>
+                        &lt;blockquote cite="https://www.goodreads.com/work/quotes/24738161-computing-machinery-and-intelligence"&gt;
+                            Let us return for a moment to Lady Lovelace's objection, which stated that the machine can only do what we tell it to do. One could say that a man can "inject" an idea into the machine, and that it will respond to a certain extent and then drop into quiescence, like a piano string struck by a hammer. Another simile would be an atomic pile of less than critical size: an injected idea is to correspond to a neutron entering the pile from without. Each such neutron will cause a certain disturbance which eventually dies away. If, however, the size of the pile is sufficiently increased, the disturbance caused by such an incoming neutron will very likely go on and on increasing until the whole pile is destroyed. Is there a corresponding phenomenon for minds, and is there one for machines? There does seem to be one for the human mind. The majority of them seem to be "sub critical," i.e. to correspond in this analogy to piles of sub-critical size. An idea presented to such a mind will on average give rise to less than one idea in reply. A smallish proportion are supercritical. An idea presented to such a mind may give rise to a whole "theory" consisting of secondary, tertiary and more remote ideas. Animals’ minds seem to be very definitely sub-critical. Adhering to this analogy we ask, "Can a machine be made to be super-critical?
+                            ― Alan Turing, 
+                            &lt;a href="https://www.goodreads.com/work/quotes/24738161-computing-machinery-and-intelligence"&gt;Computing machinery and intelligence&lt;/a&gt;
+                            &lt;/blockquote&gt;
+                            Como disse Turing: &lt;q&gt;"If a machine is expected to be infallible, it cannot also be intelligent."&lt;/q&gt;
+                    </code>
+                    <p>Resulta em:
+                    <blockquote cite="https://www.goodreads.com/work/quotes/24738161-computing-machinery-and-intelligence">
+                        Let us return for a moment to Lady Lovelace's objection, which stated that the machine can only do what we tell it to do. One could say that a man can "inject" an idea into the machine, and that it will respond to a certain extent and then drop into quiescence, like a piano string struck by a hammer. Another simile would be an atomic pile of less than critical size: an injected idea is to correspond to a neutron entering the pile from without. Each such neutron will cause a certain disturbance which eventually dies away. If, however, the size of the pile is sufficiently increased, the disturbance caused by such an incoming neutron will very likely go on and on increasing until the whole pile is destroyed. Is there a corresponding phenomenon for minds, and is there one for machines? There does seem to be one for the human mind. The majority of them seem to be "sub critical," i.e. to correspond in this analogy to piles of sub-critical size. An idea presented to such a mind will on average give rise to less than one idea in reply. A smallish proportion are supercritical. An idea presented to such a mind may give rise to a whole "theory" consisting of secondary, tertiary and more remote ideas. Animals’ minds seem to be very definitely sub-critical. Adhering to this analogy we ask, "Can a machine be made to be super-critical?
+                        ― Alan Turing, <a href="https://www.goodreads.com/work/quotes/24738161-computing-machinery-and-intelligence">Computing machinery and intelligence</a> 
+                    </blockquote>
+                    Como disse Turing: <q>"If a machine is expected to be infallible, it cannot also be intelligent."</q>
+                    </p>
+                </details>
+            </article>
+        </section>
+        <hr>
+        <section id="listas">
+            <header>
+                <h2>Tags para criação de listas</h2>
+                <a href="#inicio">
+                    <i class="fa-solid fa-arrow-up"></i>Inicio
+                </a>
+            </header>
+            <p>O html permite criação de listas ordenadas, listas não ordenadas e listas descritivas.
+                Clique em cada tag para entender como utilizar cada tipo de lista.</p>
+            <article>
+                <details>
+                    <summary>tag ol</summary>
+                    <p>A tag <strong>ol</strong> gera listas ordenadas, que são listas com índice de posição, definindo a posição do primeiro ao último elemento</p>
+                    <p>Este código:
+                        <code>
+                            &lt;ol&gt;
+                            &lt;li&gt;Primeiro item;&lt;/li&gt;
+                            &lt;li&gt;Segundo item;&lt;/li&gt;
+                            &lt;li&gt;terceiro item&lt;/li&gt;
+                            &lt;/ol&gt;
+                        </code>
+                        Gera esta lista:
+                    </p>
+                    <ol>
+                        <li>Primeiro item;</li>
+                        <li>Segundo item;</li>
+                        <li>terceiro item;</li>
+                    </ol>
+                </details>
+                <details>
+                    <summary>tag ul</summary>
+                    <p>A tag <strong>ul</strong> gera listas desordenadas, que são listas sem índice de posição.</p>
+                    <p>Este código:
+                        <code>
+                            &lt;ul&gt;
+                            &lt;li&gt;Primeiro item;&lt;/li&gt;
+                            &lt;li&gt;Segundo item;&lt;/li&gt;
+                            &lt;li&gt;terceiro item&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code>
+                        Gera esta lista:
+                    </p>
+                    <ul>
+                        <li>Primeiro item;</li>
+                        <li>Segundo item;</li>
+                        <li>terceiro item;</li>
+                    </ul>
+
+                </details>
+
+            </article>
+            <details>
+                <summary>tag dl</summary>
+                <p>A tag <strong>dl</strong> gera listas descritivas, que são listas que contém descrições de tipos, como abaixo:</p>
+                <p>Este código:
+                    <code>
+                        &lt;dl&gt;
+                        &lt;dt&gt;Café&lt;/dt&gt;
+                        &lt;dd&gt;Bebida quente de cor escura, de origem vegetal.&lt;/dd&gt;
+                        &lt;dt&gt;Leite&lt;/dt&gt;
+                        &lt;dd&gt;Bebida de cor clara, de origem animal. Consumida quente ou gelada.&lt;/dd&gt;
+                        &lt;dt&gt;Refrigerante&lt;/dt&gt;
+                        &lt;dd&gt;Bebida artificial, consumida gelada&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    </code>
+                    Gera esta lista:
+                </p>
+                <dl>
+                    <dt>Café</dt>
+                    <dd>Bebida quente de cor escura, de origem vegetal</dd>
+                    <dt>Leite</dt>
+                    <dd>Bebida de cor clara, de origem animal. Consumida quente ou gelada.</dd>
+                    <dt>Refrigerante</dt>
+                    <dd>Bebida artificial, consumida gelada</dd>
+                </dl>
+            </details>
+
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <a href="https://www.html.am/reference/html-special-characters.cfm" target="_blank">Special Characters in HTML</a>
+    </footer>
+</body>
+</html>
